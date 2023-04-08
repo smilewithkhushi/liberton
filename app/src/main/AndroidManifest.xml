@@ -20,12 +20,13 @@
 
             android:theme="@style/Theme.StudentPortalLoginApp.NoActionBar"
             />
-      
+
         <activity
             android:name=".dashboard"
             android:exported="false"
             android:label="Dashboard"
             android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -16,13 +16,13 @@ public class SignUpPage extends AppCompatActivity {
     }
 
     public void openLogin(View v){
-        Toast.makeText(this, "Moving to SignUp page", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, dashboard.class);
+        Toast.makeText(this, "Moving to Login page", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
     public void newSignup(View v){
         Toast.makeText(this, "Signing you in!", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, dashboard.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
