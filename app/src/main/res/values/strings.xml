@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Student Portal App</string>
+
     <string name="title_activity_sign_up">SignUp</string>
+    <string name="app_footer">Built by Terrific Duo</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
