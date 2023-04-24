@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Student Portal App</string>
+    <string name="app_name">LIBERTON</string>
 
     <string name="title_activity_sign_up">SignUp</string>
     <string name="app_footer">Built by Terrific Duo</string>
