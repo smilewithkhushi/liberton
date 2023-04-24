@@ -1,2 +1,2 @@
-# Student-Portal
-Login Portal Application built using Java and Android Studio
+# LIBERTON APP
+An Application for Students built using Java and Android Studio
