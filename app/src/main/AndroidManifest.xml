@@ -11,23 +11,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentPortalLoginApp"
         tools:targetApi="31">
-
-        <activity
-            android:name=".StaffDashboardActivity"
-            android:exported="false" />
-
         <activity
             android:name=".SignUpPage"
             android:exported="false"
+
             android:label="Sign Up"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.StudentPortalLoginApp.NoActionBar" />
+
+            android:theme="@style/Theme.StudentPortalLoginApp.NoActionBar"
+            />
+
+        <activity
+            android:name=".dashboard"
+            android:exported="false"
+            android:label="Dashboard"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

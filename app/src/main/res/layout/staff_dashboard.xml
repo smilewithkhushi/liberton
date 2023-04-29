@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".StaffDashboardActivity">
 
+
     <TextView
         android:id="@+id/welcome"
-        android:layout_width="136dp"
-        android:layout_height="34dp"
+        android:layout_width="109dp"
+        android:layout_height="24dp"
         android:fontFamily="@font/alata"
         android:text="Welcome"
         android:textColor="#9C27B0"
@@ -17,37 +18,37 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <TextView
         android:id="@+id/welcomeMsg"
-        android:layout_width="154dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="116dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/alata"
         android:text="Hi user!"
         android:textColor="#9C27B0"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="83dp"
-        android:layout_height="55dp"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/profileicon" />
+        app:layout_constraintVertical_bias="0.045"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/logout"
@@ -61,5 +62,82 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/welcomeMsg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="186dp"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24">
+
+        <TextView
+            android:id="@+id/classesHeld"
+            android:layout_width="153dp"
+            android:layout_height="69dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata"
+            android:gravity="start"
+            android:text="Classes Held : "
+            android:textColor="#020202"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/totalClasses"
+            android:layout_width="150dp"
+            android:layout_height="86dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata"
+            android:gravity="start"
+            android:text="Total Number of Classes : "
+            android:textColor="#020202"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/markAttendance"
+        android:layout_width="147dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="Mark Attendance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
