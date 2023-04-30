@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1090509599130",
+    "project_id": "liberton-78802",
+    "storage_bucket": "liberton-78802.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090509599130:android:93b5e66229f29f8b654a23",
+        "android_client_info": {
+          "package_name": "com.example.studentportalloginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090509599130-a6u2ipr8nifvrj2l6mjvm57cfiss5s3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYwR2zQTOgl456iDZVJe_Mkg6xl1QaJtk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090509599130-a6u2ipr8nifvrj2l6mjvm57cfiss5s3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

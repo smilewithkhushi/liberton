@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         username=findViewById(R.id.inputUsername);
         String nameText=username.getText().toString();
 
-        Intent intent = new Intent(this, dashboard.class);
+        Intent intent = new Intent(this, StaffDashboardActivity.class);
         intent.putExtra(EXTRA_NAME, nameText);
         startActivity(intent);
     }

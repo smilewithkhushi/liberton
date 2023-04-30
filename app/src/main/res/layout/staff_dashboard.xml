@@ -4,8 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="5dp"
     tools:context=".StaffDashboardActivity">
 
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_annoucement"
+        android:layout_width="167dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617">
+
+        <ImageView
+            android:id="@+id/annoucementImg"
+            android:layout_width="149dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center|start|center_horizontal|top"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/annoucements"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom|center"
+
+            android:layout_margin="5dp"
+            android:gravity="bottom|center"
+            android:text="Announcements"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_timetable"
+        android:layout_width="167dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882">
+
+        <ImageView
+            android:id="@+id/timetableimg"
+            android:layout_width="149dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center|start|center_horizontal|top"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/timetablebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom|center"
+
+            android:layout_margin="5dp"
+            android:gravity="bottom|center"
+            android:text="Time Table"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/welcome"
@@ -40,28 +124,18 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="66dp"
-        android:layout_height="56dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        app:srcCompat="@drawable/user_avatar1"
+
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="102dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="28dp"
-        android:fontFamily="@font/alata"
-        android:text="LOGOUT"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.05"
+       />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -93,7 +167,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="186dp"
-        android:layout_height="220dp"
+        android:layout_height="203dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,6 +200,7 @@
 
     </LinearLayout>
 
+
     <Button
         android:id="@+id/markAttendance"
         android:layout_width="147dp"
@@ -135,9 +210,91 @@
         android:text="Mark Attendance"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintVertical_bias="0.4" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_academiccalender"
+        android:layout_width="167dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622">
+
+        <ImageView
+            android:id="@+id/calenderimg"
+            android:layout_width="149dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center|start|center_horizontal|top"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/calenderimg"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom|center"
+
+            android:layout_margin="5dp"
+            android:gravity="bottom|center"
+            android:text="Calender"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_assignment"
+        android:layout_width="167dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888">
+
+        <ImageView
+            android:id="@+id/assignmentImg"
+            android:layout_width="149dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center|start|center_horizontal|top"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/assignmentbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom|center"
+
+            android:layout_margin="5dp"
+            android:gravity="bottom|center"
+            android:text="Assignment"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
