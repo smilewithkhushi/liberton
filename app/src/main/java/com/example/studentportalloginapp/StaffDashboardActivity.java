@@ -11,14 +11,25 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class StaffDashboardActivity extends AppCompatActivity {
 
-    TextView welcomeText;
+    TextView receiver_msg;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.staff_dashboard);
+
+        receiver_msg = findViewById(R.id.welcomeMsg);
+        Intent intent = getIntent();
+        String str = intent.getStringExtra(MainActivity.EXTRA_NAME);
+        receiver_msg.setText(" "+str);
+    }
 
     public static final String USER_PROFILE="androidx.appcompat.app.AppCompatActivity.userprofile";
     public void openUserProfile(View v){
-        Toast.makeText(this, "Logging In", Toast.LENGTH_SHORT).show();
-
+        Toast.makeText(this, "Opening your profile", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, UserprofileActivity.class);
         startActivity(intent);
     }
