@@ -11,11 +11,13 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_annoucement"
-        android:layout_width="167dp"
-        android:layout_height="127dp"
+        android:layout_width="165dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
         android:foregroundGravity="center"
-        app:cardCornerRadius="4dp"
+
+        app:cardBackgroundColor="#D2E6E5E5"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.071"
@@ -25,17 +27,15 @@
 
         <ImageView
             android:id="@+id/annoucementImg"
-            android:layout_width="149dp"
+            android:layout_width="match_parent"
             android:layout_height="86dp"
-            android:layout_gravity="center|start|center_horizontal|top"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_gravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.043"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/annoucement" />
 
         <Button
             android:id="@+id/annoucements"
@@ -52,31 +52,31 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_timetable"
-        android:layout_width="167dp"
-        android:layout_height="127dp"
+        android:layout_width="165dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
         android:foregroundGravity="center"
-        app:cardCornerRadius="4dp"
+
+        app:cardBackgroundColor="#D2E6E5E5"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882">
+        app:layout_constraintVertical_bias="0.893">
 
         <ImageView
             android:id="@+id/timetableimg"
             android:layout_width="149dp"
             android:layout_height="86dp"
-            android:layout_gravity="center|start|center_horizontal|top"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_gravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.043"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/timetable" />
 
         <Button
             android:id="@+id/timetablebtn"
@@ -122,20 +122,21 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
-    <ImageView
+
+    <ImageButton
         android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-
-        app:srcCompat="@drawable/user_avatar1"
-
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"
-       />
+        app:srcCompat="@drawable/user_avatar1"
+        android:onClick="openUserProfile"
+        />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -149,7 +150,7 @@
         app:layout_constraintStart_toEndOf="@+id/welcomeMsg"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.043"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/notification" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -162,7 +163,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.043"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/message" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -208,6 +209,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:text="Mark Attendance"
+        android:fontSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -217,31 +219,31 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_academiccalender"
-        android:layout_width="167dp"
-        android:layout_height="127dp"
+        android:layout_width="165dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
         android:foregroundGravity="center"
-        app:cardCornerRadius="4dp"
+
+        app:cardBackgroundColor="#D2E6E5E5"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.622">
+        app:layout_constraintVertical_bias="0.615">
 
         <ImageView
             android:id="@+id/calenderimg"
             android:layout_width="149dp"
             android:layout_height="86dp"
-            android:layout_gravity="center|start|center_horizontal|top"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_gravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.043"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/calender" />
 
         <Button
             android:id="@+id/calenderimg"
@@ -258,11 +260,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_assignment"
-        android:layout_width="167dp"
-        android:layout_height="127dp"
+        android:layout_width="165dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
         android:foregroundGravity="center"
-        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="#D2E6E5E5"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.928"
@@ -274,15 +277,13 @@
             android:id="@+id/assignmentImg"
             android:layout_width="149dp"
             android:layout_height="86dp"
-            android:layout_gravity="center|start|center_horizontal|top"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_gravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.043"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/assignment" />
 
         <Button
             android:id="@+id/assignmentbtn"

@@ -15,23 +15,14 @@ public class StaffDashboardActivity extends AppCompatActivity {
 
     TextView welcomeText;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.staff_dashboard);
-        welcomeText = findViewById(R.id.welcomeMsg);
-        Intent intent = getIntent();
-        String name = intent.getStringExtra(MainActivity.EXTRA_NAME);
-        welcomeText.setText("" + name);
+    public static final String USER_PROFILE="androidx.appcompat.app.AppCompatActivity.userprofile";
+    public void openUserProfile(View v){
+        Toast.makeText(this, "Logging In", Toast.LENGTH_SHORT).show();
 
-        Button logout = (Button) findViewById(R.id.logout);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                logout();
-            }
-        });
+        Intent intent = new Intent(this, UserprofileActivity.class);
+        startActivity(intent);
     }
+
     public void logout() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(StaffDashboardActivity.this);
         alertDialog.setTitle("Logout"); // Sets title for your alertbox
