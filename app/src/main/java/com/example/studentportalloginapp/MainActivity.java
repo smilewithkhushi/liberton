@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     //OPENS THE USER DASHBOARD AND DISPLAYS THE USER NAME WITH A MESSAGE FOR USER
     public void openStaffDashboard(View v){
         Toast.makeText(this, "Logging In", Toast.LENGTH_SHORT).show();
-        username=findViewById(R.id.inputUsername);
+        username=findViewById(R.id.inputUsernameEmail);
         String nameText=username.getText().toString();
 
         Intent intent = new Intent(this, StaffDashboardActivity.class);
