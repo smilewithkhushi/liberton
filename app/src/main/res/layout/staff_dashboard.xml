@@ -246,7 +246,7 @@
             tools:srcCompat="@drawable/calender" />
 
         <Button
-            android:id="@+id/calenderimg"
+            android:id="@+id/calenderBtn"
             android:layout_width="wrap_content"
             android:layout_height="34dp"
             android:layout_gravity="bottom|center"

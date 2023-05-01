@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context=".activity_sign_up">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -128,7 +128,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.052"
-        app:srcCompat="@drawable/personnew" />
+        app:srcCompat="@drawable/liberton_applogo" />
 
     <TextView
         android:id="@+id/loginPage"

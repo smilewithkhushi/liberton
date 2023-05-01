@@ -23,11 +23,10 @@
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_gravity="center"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                app:srcCompat="@drawable/user_avatar1"
-                />
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/user_avatar1" />
 
             <TextView
                 android:id="@+id/Username"
@@ -66,8 +65,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="2dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/alata"
-                android:gravity="center|end"
+                android:gravity="center"
                 android:text="LOG OUT" />
 
             <TextView
@@ -79,12 +79,6 @@
                 android:fontFamily="@font/alata"
                 android:text="Report a problem"
                 android:textSize="14sp" />
-
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                app:srcCompat="@drawable/profileicon" />
 
 
         </LinearLayout>
