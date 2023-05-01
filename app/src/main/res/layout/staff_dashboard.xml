@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.563"
-        tools:srcCompat="@drawable/annoucement" />
+        tools:src="@drawable/annoucement" />
 
     <Button
         android:id="@+id/announcements"
@@ -62,23 +62,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.833"
-        tools:srcCompat="@drawable/timetable" />
+        tools:src="@drawable/timetable" />
 
     <TextView
         android:id="@+id/welcomeMsg"
         android:layout_width="116dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginRight="172dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/alata"
         android:text="Hi user!"
         android:textColor="#9C27B0"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
     <TextView
