@@ -27,7 +27,7 @@
 
         <ImageView
             android:id="@+id/annoucementImg"
-            android:layout_width="80dp"
+            android:layout_width="140dp"
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -65,14 +65,14 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903">
+        app:layout_constraintVertical_bias="0.972">
 
         <ImageView
             android:id="@+id/timetableimg"
-            android:layout_width="80dp"
+            android:layout_width="140dp"
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -81,8 +81,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.833"
-            app:srcCompat="@drawable/timetable"
-            />
+            app:srcCompat="@drawable/timetable" />
 
         <Button
             android:id="@+id/timetablebtn"
@@ -101,27 +100,11 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/welcomeMsg"
-        android:layout_width="116dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/alata"
-        android:text="Hi user!"
-        android:textColor="#9C27B0"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.34"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
     <TextView
         android:id="@+id/welcome"
         android:layout_width="109dp"
         android:layout_height="24dp"
-        android:layout_marginEnd="184dp"
-        android:layout_marginRight="184dp"
         android:fontFamily="@font/alata"
         android:text="Welcome"
         android:textColor="#9C27B0"
@@ -129,52 +112,46 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <ImageButton
         android:id="@+id/userImage"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
         android:onClick="openUserProfile"
-        android:scaleType="fitStart"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/welcome"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024"
         app:srcCompat="@drawable/user_avatar1" />
 
-
     <ImageView
         android:id="@+id/notification"
-        android:layout_width="45dp"
-        android:layout_height="42dp"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/notification" />
 
     <ImageView
         android:id="@+id/messages"
-        android:layout_width="37dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="42dp"
+        android:layout_height="29dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/message" />
 
     <LinearLayout
@@ -215,15 +192,16 @@
 
     <Button
         android:id="@+id/markAttendance"
-        android:layout_width="151dp"
-        android:layout_height="85dp"
+        android:layout_width="132dp"
+        android:layout_height="83dp"
         android:text="Mark Attendance"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
+        app:layout_constraintVertical_bias="0.332" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_academiccalender"
@@ -280,10 +258,10 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908">
+        app:layout_constraintVertical_bias="0.972">
 
         <ImageView
             android:id="@+id/assignmentImg"
@@ -313,5 +291,48 @@
             app:layout_constraintVertical_bias="0.917" />
 
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/welcomeMsg"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="Hi user!"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/attendacePercentageBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <ImageView
+        android:id="@+id/rings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138"
+        app:srcCompat="@drawable/rings" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

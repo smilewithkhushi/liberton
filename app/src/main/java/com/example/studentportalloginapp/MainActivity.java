@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         String nameText=username.getText().toString();
 
         Intent intent = new Intent(this, StaffDashboardActivity.class);
-        intent.putExtra(EXTRA_NAME, nameText);
+       // intent.putExtra(EXTRA_NAME, nameText);
         startActivity(intent);
     }
 
